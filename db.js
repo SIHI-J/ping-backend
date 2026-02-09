@@ -2,9 +2,9 @@ const mysql = require('mysql');
 
 // db연결 설정 
 const connection = mysql.createConnection({
-  host: 'localhost',
+  host: 'database',
   user: 'root',
-  password: '1234',
+  password: '0226',
   database: 'ping',
   multipleStatements: true
 });
@@ -19,3 +19,4 @@ connection.connect((err) => {
 });
 
 module.exports = connection;
+
