@@ -2,7 +2,7 @@ const mysql = require('mysql');
 
 // db연결 설정 
 const connection = mysql.createConnection({
-  host: 'database',
+  host: 'mariadb',
   user: 'root',
   password: '0226',
   database: 'ping',
@@ -19,4 +19,5 @@ connection.connect((err) => {
 });
 
 module.exports = connection;
+
 
